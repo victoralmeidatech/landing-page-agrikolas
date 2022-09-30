@@ -1,0 +1,526 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --maxWidthWrapper: 1300px;
+  --primary-color: #41ff79;
+  --secondary-color: #008000;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+html,
+body,
+input,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  border-bottom: 10px solid var(--primary-color);
+}
+
+.wrapper {
+  width: 100%;
+  padding: 2rem;
+  max-width: var(--maxWidthWrapper);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.iframeContainer {
+  position: relative;
+  height: 300px;
+  width: 1200px;
+}
+
+.iframeContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 100%;
+}
+
+
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: url("../img/backgroundBanner.png") no-repeat;
+  background-size: cover;
+}
+
+.banner .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.banner__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-bottom: 2rem;
+}
+
+.banner__logo {
+  width: 250px;
+}
+
+.banner p {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 3rem;
+  text-align: left;
+
+  color: #fff;
+}
+
+.banner p strong {
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.banner__modelImg {
+  max-width: 600px;
+}
+
+.buttonCta {
+  display: block;
+  max-width: 300px;
+
+  padding: 1rem 2rem;
+  color: #314d3e;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+
+  transition: all 200ms linear;
+}
+
+.buttonCta:hover {
+  filter: brightness(0.9);
+}
+
+.buttonCta--full {
+  width: 100%;
+  max-width: 100%;
+}
+
+.sectionOne h2 {
+  font-size: 1.75rem;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sectionOne__subtitle {
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+
+.sectionOne__row {
+  margin-top: 1.5rem;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-align: left;
+}
+
+.sectionOne__row--inverted {
+  flex-direction: row-reverse;
+}
+
+.sectionOne__row img {
+  width: 200px;
+}
+
+.sectionOne__content {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+}
+
+.sectionOne__content p {
+  line-height: 1.75rem;
+}
+
+.sectionOne__content a {
+  margin-top: 1rem;
+}
+
+.sectionOne__content strong {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.sectionOne__content--inverted {
+  align-items: end;
+  text-align: end;
+}
+
+.sectionTwo {
+  background: url("../img/sectionTwoBackground.png") no-repeat;
+  background-size: cover;
+}
+
+.sectionTwo h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.sectionTwo__vantagens {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.sectionTwo__vantagens li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #fff;
+}
+
+.sectionTwo__vantagens li img {
+  width: 48px;
+  height: 48px;
+}
+
+.sectionTwo__vantagens li span {
+  margin-top: 0.75rem;
+}
+
+.sectionTwo__relatoriosImg {
+  margin-top: 6rem;
+}
+
+.sectionTwo__cards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.sectionTwo__cards li img {
+  width: 400px;
+}
+
+.sectionThree {
+  background: url("../img/sectionThreeBackground.png") no-repeat;
+  background-size: contain;
+}
+
+.sectionThree h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.sectionThree__lista {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.sectionFour {
+  width: 100%;
+  background: url("../img/sectionFourBackground.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.sectionFour .wrapper {
+  padding-bottom: 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionFour__content {
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.sectionFour__content h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.sectionFour__content p {
+  margin: 1.5rem 0;
+  color: #fff;
+  line-height: 2rem;
+  text-align: justify;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.sectionFour__modelImg {
+  max-width: 600px;
+}
+
+.sectionFive h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.sectionFive {
+  background: url("../img/sectionThreeBackground.png") no-repeat;
+  background-size: cover;
+}
+
+.sectionFive__depoimentos {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sectionSix .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sectionSix h2 {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.sectionSix div {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.sectionSix div h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.sectionSix div p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.sectionSix span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sectionSeven {
+  border: none;
+  padding-bottom: 0;
+}
+
+.sectionSeven .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionSeven__precoImg {
+  width: 300px;
+}
+
+.sectionSeven a {
+  margin: 1rem 0;
+}
+
+.sectionSeven p {
+  font-size: 1.25rem;
+}
+
+/* RESPONSIVIDADE PARA TABLET E TELAS HD */
+@media (max-width: 1366px) {
+  html,
+  body {
+    font-size: 93.75%;
+  }
+
+  .banner .wrapper {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .banner__modelImg {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    max-width: 380px;
+  }
+
+  .sectionOne__row,
+  .sectionOne__row--inverted {
+    flex-direction: column;
+  }
+
+  .sectionOne__content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .sectionTwo__relatoriosImg {
+    width: 100%;
+  }
+
+  .sectionTwo__cards li img {
+    width: 100%;
+  }
+
+  .sectionThree__lista img {
+    width: 100%;
+  }
+
+  .sectionFour .wrapper {
+    position: relative;
+  }
+
+  .sectionFour__content {
+    width: 50%;
+  }
+
+  .sectionFour__modelImg {
+    max-width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+  }
+
+  .sectionFive__depoimentos {
+    flex-direction: column;
+  }
+
+  .sectionSeven__siteSeguroImg {
+    width: 100%;
+  }
+}
+
+
+/* RESPONSIVIDADE PARA MOBILE */
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: 86.25%;
+  }
+
+  .iframeContainer {
+    width: 100%;
+    height: 250px;
+  }
+
+  .iframeContainer iframe {
+    height: 250px;
+  }
+
+  .banner__content {
+    width: 100%;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .banner__content p {
+    text-align: center;
+  }
+
+  .banner__modelImg {
+    display: none;
+  }
+
+  .sectionTwo__vantagens {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .sectionTwo__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionThree__lista {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionFour .wrapper {
+    position: relative;
+  }
+
+  .sectionFour__content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .sectionFour__content h3 {
+    text-align: center;
+  }
+
+  .sectionFour__content p {
+    text-align: center;
+  }
+
+  .sectionFour__modelImg {
+    display: none;
+  }
+
+  .sectionFive__depoimentos {
+    padding: 2rem 0;
+  }
+
+  .sectionSix h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .sectionSeven__precoImg {
+    width: 100%;
+  }
+}
